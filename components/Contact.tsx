@@ -4,26 +4,19 @@ import { Mail, Linkedin, Github, Send } from "lucide-react";
 
 const Contact = () => {
     return (
-        <section
-            id="contact"
-            className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30"
-        >
-            <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-16 space-y-4">
+        <section id="contact" className="py-20">
+            <div className="max-w-4xl  mx-auto">
+                <div className="text-center mb-10 space-y-2">
                     <h2 className="text-4xl sm:text-5xl font-bold">
                         Get In Touch
                     </h2>
-                    <div className="w-20 h-1 gradient-primary mx-auto rounded-full"></div>
+                    <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
                     <p className="text-muted-foreground text-lg">
                         Let&apos;s collaborate on your next project
                     </p>
                 </div>
 
-                <Card className="p-8 sm:p-12 shadow-custom-lg relative overflow-hidden">
-                    {/* Background decoration */}
-                    <div className="absolute top-0 right-0 w-64 h-64 gradient-accent opacity-5 rounded-full blur-3xl"></div>
-                    <div className="absolute bottom-0 left-0 w-64 h-64 gradient-primary opacity-5 rounded-full blur-3xl"></div>
-
+                <Card className="p-6 sm:p-12 relative overflow-hidden">
                     <div className="relative space-y-8">
                         <div className="text-center space-y-4">
                             <h3 className="text-2xl font-bold">
@@ -36,14 +29,13 @@ const Contact = () => {
                             </p>
                         </div>
 
-                        {/* Contact methods */}
                         <div className="grid sm:grid-cols-2 gap-4">
                             <a
                                 href="mailto:armanulhaq10@gmail.com"
                                 className="flex items-center gap-4 p-4 rounded-xl bg-card shadow-custom-sm hover:shadow-custom-md transition-smooth group"
                             >
                                 <div className="w-12 h-12 rounded-lg gradient-primary flex items-center justify-center shadow-glow group-hover:scale-110 transition-bounce">
-                                    <Mail className="w-5 h-5 text-primary-foreground" />
+                                    <Mail className="w-5 h-5 text-primary" />
                                 </div>
                                 <div className="flex-1">
                                     <p className="text-sm text-muted-foreground">
@@ -56,13 +48,13 @@ const Contact = () => {
                             </a>
 
                             <a
-                                href="https://linkedin.com"
+                                href="https://linkedin.com/in/armanulhaq"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-4 p-4 rounded-xl bg-card shadow-custom-sm hover:shadow-custom-md transition-smooth group"
                             >
-                                <div className="w-12 h-12 rounded-lg gradient-accent flex items-center justify-center shadow-glow group-hover:scale-110 transition-bounce">
-                                    <Linkedin className="w-5 h-5 text-primary-foreground" />
+                                <div className="w-12 h-12 rounded-lg  flex items-center justify-center shadow-glow group-hover:scale-110 transition-bounce">
+                                    <Linkedin className="w-5 h-5 text-primary" />
                                 </div>
                                 <div className="flex-1">
                                     <p className="text-sm text-muted-foreground">
@@ -77,10 +69,7 @@ const Contact = () => {
 
                         {/* CTA Button */}
                         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                            <Button
-                                size="lg"
-                                className="gap-2 shadow-custom-md hover:shadow-custom-lg transition-smooth"
-                            >
+                            <Button size="lg" className="gap-2 text-white">
                                 <Send className="w-4 h-4" />
                                 Send a Message
                             </Button>
@@ -95,7 +84,7 @@ const Contact = () => {
                         </div>
 
                         {/* Additional info */}
-                        <div className="text-center pt-8 border-t">
+                        <div className="text-center pt-6 border-t">
                             <p className="text-sm text-muted-foreground">
                                 Available for freelance opportunities and
                                 full-time positions
