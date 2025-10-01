@@ -1,15 +1,19 @@
 import { ModeToggle } from "./mode-toggle";
+import Image from "next/image";
 
 const Navbar = () => {
     return (
-        <div className="flex justify-center items-center gap-10">
-            <nav className="sticky flex justify-between w-[90%] lg:w-[40%] rounded-4xl px-5 lg:px-10 py-4 border border-blue-900 backdrop-blur-2xl text-xs md:text-md lg:text-lg">
-                <ul className="flex space-x-4">About Me</ul>
-                <ul className="flex space-x-4">Skills</ul>
-                <ul className="flex space-x-4">Projects</ul>
-                <ul className="flex space-x-4">Contact</ul>
+        <div className="flex justify-between items-center lg:px-20">
+            <div className="text-5xl">🧑🏻‍💻</div>
+            <nav className="flex justify-between items-center">
+                <ul className="flex space-x-4 lg:space-x-10 mx-5 lg:mx-10 text-sm md:text-md lg:text-lg">
+                    <li>About Me</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+                <ModeToggle />
             </nav>
-            <ModeToggle />
         </div>
     );
 };
