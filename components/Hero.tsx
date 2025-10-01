@@ -4,7 +4,7 @@ import HeroButtons from "./HeroButtons";
 
 const Hero = () => {
     return (
-        <section className="min-h-[85vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
+        <section className="h-[85vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="flex justify-center items-center lg:order-2">
                     <Image
@@ -18,7 +18,7 @@ const Hero = () => {
 
                 <div className="space-y-6 lg:order-1">
                     <div className="space-y-2">
-                        <p className="text-primary font-medium text-xl">
+                        <p className="text-primary font-medium text-lg lg:text-xl">
                             Hello, I&apos;m
                         </p>
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
@@ -26,19 +26,19 @@ const Hero = () => {
                         </h1>
                         <div className="flex items-center gap-3">
                             <div className="h-2 w-12 bg-primary rounded-full"></div>
-                            <h2 className="text-2xl sm:text-3xl font-semibold text-muted-foreground">
+                            <h2 className="text-lg lg:text-2xl sm:text-3xl font-semibold">
                                 Full Stack Developer
                             </h2>
                         </div>
                     </div>
 
-                    <p className="text-lg text-muted-foreground ">
+                    <p className="text-md lg:text-lg text-muted-foreground ">
                         Crafting elegant solutions with modern web technologies.
                         Passionate about creating beautiful, functional, and
                         user-centric applications.
                     </p>
 
-                    <div className="flex gap-4 pt-4">
+                    <div className="flex gap-4 ">
                         <HeroButtons />
                     </div>
 

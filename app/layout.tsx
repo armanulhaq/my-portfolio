@@ -2,30 +2,32 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "../components/theme-provider";
 import Navbar from "../components/Navbar";
-import { Inter } from "next/font/google";
+import { Be_Vietnam_Pro } from "next/font/google";
 
-const inter = Inter({
-    subsets: ["latin"],
-    variable: "--font-inter",
+const beVietnam = Be_Vietnam_Pro({
+    weight: ["400", "500", "600", "700"],
+    style: ["normal", "italic"],
+    subsets: ["latin", "vietnamese"],
+    variable: "--font-be-vietnam",
     display: "swap",
 });
 
 export const metadata: Metadata = {
     title: "Portfolio",
-    description: "Portfolio of Arman Ul Haq | Software Engineer",
+    description: "Portfolio of Arman Ul haq | Software Engineer",
 };
 
 export default function RootLayout({
     children,
-}: Readonly<{
+}: {
     children: React.ReactNode;
-}>) {
+}) {
     return (
         <>
             <html lang="en" suppressHydrationWarning>
                 <head />
                 <body
-                    className={`${inter.variable} min-h-screen p-5 font-sans`}
+                    className={`${beVietnam.variable} min-h-screen p-5 font-sans`}
                 >
                     <ThemeProvider
                         attribute="class"
