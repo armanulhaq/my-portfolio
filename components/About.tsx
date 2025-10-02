@@ -1,4 +1,3 @@
-import { GraduationCap, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 
@@ -20,24 +19,22 @@ const About = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                     <Card className="p-8 flex transition-smooth group">
                         <div className="space-y-6 flex flex-col items-center justify-between">
-                            <div className="w-28 h-28 bg-black flex items-center justify-center rounded-full">
-                                <GraduationCap className="w-16 h-16 text-primary-foreground" />
-                            </div>
+                            <Image
+                                src="/graduation.gif"
+                                alt="University"
+                                width={220}
+                                height={220}
+                                className="rounded-full shadow-md"
+                            />
+
                             <div className="flex items-center gap-4">
                                 <div className="flex flex-col items-center">
-                                    <p className="text-primary font-medium">
+                                    <p className="text-2xl font-bold">
                                         B.Tech in Computer Science
                                     </p>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-primary">
                                         Vellore Institute of Technology
                                     </p>
-
-                                    <div className="flex items-center gap-2 pt-2">
-                                        <Award className="w-5 h-5 text-primary" />
-                                        <span className=" font-semibold">
-                                            CGPA: 8.9
-                                        </span>
-                                    </div>
                                 </div>
                             </div>
                             <div>
@@ -59,10 +56,11 @@ const About = () => {
                         <div className="space-y-6">
                             <div className="w-full flex items-center justify-center">
                                 <Image
-                                    src="/fullstack.png"
+                                    src="/fullstack.gif"
                                     alt="Profile"
-                                    width={120}
-                                    height={120}
+                                    width={220}
+                                    height={220}
+                                    className="rounded-full shadow-md"
                                 />
                             </div>
 

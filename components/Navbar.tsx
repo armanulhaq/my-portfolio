@@ -8,7 +8,7 @@ const Navbar = () => {
                 <span className="text-primary text-4xl pb-3 pl-1">.</span>
             </div>
             <nav className="flex justify-between items-center">
-                <ul className="flex space-x-4 lg:space-x-10 mx-5 lg:mx-10 text-sm md:text-md lg:text-lg">
+                {/* <ul className="flex space-x-4 lg:space-x-10 mx-5 lg:mx-10 text-sm md:text-md lg:text-lg">
                     <li className="hover:scale-110 hover:text-primary cursor-pointer transition-transform">
                         About
                     </li>
@@ -21,7 +21,7 @@ const Navbar = () => {
                     <li className="hover:scale-110 hover:text-primary cursor-pointer transition-transform">
                         Contact
                     </li>
-                </ul>
+                </ul> */}
                 <ModeToggle />
             </nav>
         </div>

@@ -32,11 +32,8 @@ const ProjectButtons = ({ project }: { project: ProjectItem }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Button
-                        variant="outline"
-                        className="py-6 flex items-center"
-                    >
-                        <Github className="w-4 h-4 mr-2" />
+                    <Button className="py-6 flex items-center bg-black text-white hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/80">
+                        <Github className="w-4 h-4" />
                         View Code
                     </Button>
                 </Link>

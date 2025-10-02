@@ -51,8 +51,8 @@ const Hero = () => {
                             <Image
                                 src="/github.png"
                                 alt="Github"
-                                width={30}
-                                height={30}
+                                width={35}
+                                height={35}
                             />
                         </Link>
                         <Link
@@ -63,8 +63,8 @@ const Hero = () => {
                             <Image
                                 src="/linkedin.png"
                                 alt="Linkedin"
-                                width={30}
-                                height={30}
+                                width={35}
+                                height={35}
                             />
                         </Link>
                         <Link
@@ -75,8 +75,8 @@ const Hero = () => {
                             <Image
                                 src="/figma.png"
                                 alt="Figma"
-                                width={30}
-                                height={30}
+                                width={35}
+                                height={35}
                             />
                         </Link>
                     </div>

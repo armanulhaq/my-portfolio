@@ -1,6 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
 import projects from "@/constants/projects";
 import Image from "next/image";
 import ProjectButtons from "./ProjectButtons";

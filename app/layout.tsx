@@ -13,8 +13,8 @@ const beVietnam = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-    title: "Portfolio",
-    description: "Portfolio of Arman Ul haq | Software Engineer",
+    title: "Arman Ul Haq",
+    description: "Portfolio of Arman Ul Haq | Software Engineer",
 };
 
 export default function RootLayout({

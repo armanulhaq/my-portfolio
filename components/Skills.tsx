@@ -19,7 +19,7 @@ const Skills = () => {
                     {Object.entries(skills).map(([category, items]) => (
                         <div
                             key={category}
-                            className="bg-card border border-border rounded-xl p-8 shadow-md backdrop-blur-sm transition-shadow hover:shadow-lg hover:border-primary/50"
+                            className="bg-card border rounded-xl p-8 shadow-md backdrop-blur-sm transition-shadow hover:shadow-lg hover:border-primary/50"
                         >
                             <h3 className="text-xl font-bold text-foreground mb-6 pb-3 border-b border-border">
                                 {category}
