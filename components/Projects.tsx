@@ -17,7 +17,7 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-10">
                     {projects.map((project) => (
                         <Card key={project.title} className="p-0">
                             <Image
@@ -27,7 +27,7 @@ const Projects = () => {
                                 height={500}
                                 className="w-full h-auto rounded-t-lg"
                             />
-                            <div className="px-7 ">
+                            <div className="px-7">
                                 <h3 className="text-2xl font-bold">
                                     {project.title}
                                 </h3>

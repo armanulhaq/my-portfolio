@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import skills from "@/constants/skills";
+import Image from "next/image";
 
 const Skills = () => {
     return (
@@ -28,10 +29,16 @@ const Skills = () => {
                                 {items.map((skill) => (
                                     <Badge
                                         variant="outline"
-                                        key={skill}
-                                        className="px-4 py-2 text-sm font-medium bg-muted/50 hover:bg-primary/20 hover:text-primary border border-border hover:border-primary/50 transition-colors"
+                                        key={skill.name}
+                                        className="px-4 py-2 text-sm font-medium bg-muted/50 hover:bg-primary/20 hover:text-primary border border-border hover:border-primary/50 transition-colors flex items-center gap-2"
                                     >
-                                        {skill}
+                                        <Image
+                                            src={skill.icon}
+                                            alt={skill.name}
+                                            width={20}
+                                            height={20}
+                                        />
+                                        {skill.name}
                                     </Badge>
                                 ))}
                             </div>

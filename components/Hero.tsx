@@ -5,8 +5,8 @@ import HeroButtons from "./HeroButtons";
 const Hero = () => {
     return (
         <section className="h-[85vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="flex justify-center items-center lg:order-2">
+            <div className="grid xl:grid-cols-2 gap-12 items-center">
+                <div className="flex justify-center items-center xl:order-2">
                     <Image
                         src="/Me.jpg"
                         alt="Me"
@@ -16,7 +16,7 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="space-y-6 lg:order-1">
+                <div className="space-y-6 xl:order-1">
                     <div className="space-y-2">
                         <p className="text-primary font-medium text-lg lg:text-xl">
                             Hello, I&apos;m
@@ -49,7 +49,7 @@ const Hero = () => {
                             className="w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
                         >
                             <Image
-                                src="/github.png"
+                                src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"
                                 alt="Github"
                                 width={35}
                                 height={35}
@@ -61,7 +61,7 @@ const Hero = () => {
                             className="w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
                         >
                             <Image
-                                src="/linkedin.png"
+                                src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"
                                 alt="Linkedin"
                                 width={35}
                                 height={35}
@@ -73,7 +73,7 @@ const Hero = () => {
                             className="w-12 h-12 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
                         >
                             <Image
-                                src="/figma.png"
+                                src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000"
                                 alt="Figma"
                                 width={35}
                                 height={35}

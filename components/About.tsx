@@ -25,6 +25,7 @@ const About = () => {
                                 width={220}
                                 height={220}
                                 className="rounded-full shadow-md"
+                                unoptimized
                             />
 
                             <div className="flex items-center gap-4">
@@ -61,6 +62,7 @@ const About = () => {
                                     width={220}
                                     height={220}
                                     className="rounded-full shadow-md"
+                                    unoptimized
                                 />
                             </div>
 

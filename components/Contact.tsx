@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
-import { Linkedin, Mail } from "lucide-react";
+import { Copy, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
+import EmailCopyButton from "./EmailCopyButton";
 
 const Contact = () => {
     return (
@@ -30,24 +31,12 @@ const Contact = () => {
                         </div>
 
                         <div className="grid sm:grid-cols-2 gap-4">
-                            <Link
-                                href="mailto:armanulhaq10@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-4 p-4"
-                            >
+                            <div className="flex items-center gap-4 p-4">
                                 <div className="w-12 h-12 rounded-lg flex items-center justify-center">
                                     <Mail className="w-7 h-7 text-primary" />
                                 </div>
-                                <div className="flex-1">
-                                    <p className="text-sm text-muted-foreground">
-                                        Email
-                                    </p>
-                                    <p className="font-medium hover:text-primary hover:scale-105 transition-all">
-                                        armanulhaq10@gmail.com
-                                    </p>
-                                </div>
-                            </Link>
+                                <EmailCopyButton />
+                            </div>
 
                             <Link
                                 href="https://linkedin.com/in/armanulhaq"
