@@ -2,11 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Experience = () => {
     const experiences = [
         {
-            role: "Associate Software Developer Intern",
+            role: "Associate Software Developer Trainee",
             company: "KPIT",
             duration: "Dec 2023 - Aug 2024",
             location: "Bengaluru, IN",
@@ -21,11 +22,16 @@ const Experience = () => {
                 "SOME/IP",
                 "Automotive Software Architecture",
                 "Soft Skills",
+                "C",
+                "C++",
+                "Modern C++",
             ],
             achievements: [
-                "Completed training in essential soft skills, such as professional email writing, meeting etiquette, and time management, strengthening workplace readiness.",
-                "Explored the architecture and design of the ADAS Probe Application, deepening understanding of vehicle data processing.",
-                "Built foundational skills in both classic and adaptive AUTOSAR, focusing on seamless software integration in complex automotive systems.",
+                "Completed professional development training in email writing, meeting etiquette, and time management, strengthening workplace readiness.",
+                "Gained exposure to the architecture and design of the ADAS Probe Application, understanding its role in vehicle data processing.",
+                "Developed an introductory understanding of inter-process and inter-ECU communication protocols such as IPC and SOME/IP.",
+                "Learned about CAN and LIN protocols and their significance in enabling efficient in-vehicle communication.",
+                "Acquired foundational knowledge of both Classic and Adaptive AUTOSAR frameworks for software integration in automotive systems.",
             ],
         },
     ];
@@ -33,14 +39,14 @@ const Experience = () => {
     return (
         <section id="experience" className="py-20 px-4">
             <div className="container max-w-6xl">
-                <div className="text-center mb-16">
-                    <p className="text-primary font-semibold mb-2">
-                        EXPERIENCE
-                    </p>
-                    <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
-                    <h2 className="text-4xl md:text-5xl font-bold mt-2">
-                        Professional Journey
+                <div className="text-center mb-16 space-y-4">
+                    <h2 className="text-4xl sm:text-5xl font-bold">
+                        Experience
                     </h2>
+                    <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+                    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                        Explore my professional journey
+                    </p>
                 </div>
 
                 <div className="space-y-8">
@@ -57,7 +63,11 @@ const Experience = () => {
                                                 {exp.role}
                                             </h3>
                                         </div>
-                                        <div className="flex items-center gap-2">
+                                        <Link
+                                            href="https://www.kpit.com/"
+                                            target="_blank"
+                                            className="flex items-center gap-3"
+                                        >
                                             <Image
                                                 src="/KPIT.png"
                                                 alt="KPIT"
@@ -65,19 +75,19 @@ const Experience = () => {
                                                 height={25}
                                                 className="rounded-md"
                                             />
-                                            <p className="text-xl text-primary font-semibold">
+                                            <p className="text-xl font-semibold hover:text-primary transition-colors hover:scale-105 cursor-pointer">
                                                 {exp.company}
                                             </p>
-                                        </div>
+                                        </Link>
                                     </div>
                                     <div className="flex flex-col gap-2">
-                                        <div className="flex items-center gap-2 text-muted-foreground">
+                                        <div className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors hover:scale-105 cursor-pointer">
                                             <Calendar className="w-4 h-4" />
                                             <span className="text-sm font-medium">
                                                 {exp.duration}
                                             </span>
                                         </div>
-                                        <div className="flex items-center gap-2 text-muted-foreground">
+                                        <div className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors hover:scale-105 cursor-pointer">
                                             <MapPin className="w-4 h-4" />
                                             <span className="text-sm font-medium">
                                                 {exp.location}
@@ -86,7 +96,7 @@ const Experience = () => {
                                     </div>
                                 </div>
 
-                                <p className="text-foreground/70">
+                                <p className="text-foreground/80">
                                     {exp.description}
                                 </p>
 
@@ -113,7 +123,7 @@ const Experience = () => {
 
                                 <div className="space-y-3">
                                     <h4 className="font-semibold text-lg uppercase">
-                                        Technologies Used
+                                        Technologies
                                     </h4>
                                     <div className="flex flex-wrap gap-2">
                                         {exp.technologies.map((tech, idx) => (

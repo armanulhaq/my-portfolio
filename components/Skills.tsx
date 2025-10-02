@@ -6,14 +6,12 @@ const Skills = () => {
     return (
         <section className="py-20 px-4 md:px-8">
             <div className="max-w-6xl mx-auto space-y-12">
-                <div className="text-center space-y-3">
-                    <p className="text-primary text-sm font-semibold uppercase">
-                        Explore my
-                    </p>
+                <div className="text-center mb-16 space-y-4">
+                    <h2 className="text-4xl sm:text-5xl font-bold">Skills</h2>
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
-                    <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                        Skills
-                    </h2>
+                    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                        Discover my technical toolkit
+                    </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
