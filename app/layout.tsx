@@ -4,6 +4,7 @@ import { ThemeProvider } from "../components/theme-provider";
 import Navbar from "../components/Navbar";
 import { Be_Vietnam_Pro } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
+import Footer from "../components/Footer";
 
 const beVietnam = Be_Vietnam_Pro({
     weight: ["400", "500", "600", "700"],
@@ -39,6 +40,7 @@ export default function RootLayout({
                         <Navbar />
                         <Toaster />
                         {children}
+                        <Footer />
                     </ThemeProvider>
                 </body>
             </html>

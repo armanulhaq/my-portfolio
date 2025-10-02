@@ -57,7 +57,7 @@ const About = () => {
                         <div className="space-y-6">
                             <div className="w-full flex items-center justify-center">
                                 <Image
-                                    src="/fullstack.gif"
+                                    src="/Dev.jpg"
                                     alt="Profile"
                                     width={220}
                                     height={220}
