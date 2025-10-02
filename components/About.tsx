@@ -44,7 +44,7 @@ const About = () => {
                                     abilities in core computer science subjects
                                     and cultivated a robust proficiency in
                                     full-stack web development. I&apos;m
-                                    committed to perpetual learning and aim to
+                                    committed to endless learning and aim to
                                     make a meaningful contribution to the field.
                                 </p>
                             </div>
@@ -75,7 +75,7 @@ const About = () => {
                                 </p>
                             </div>
 
-                            <div className="space-y-3 pt-4">
+                            <div className="space-y-2 pt-4">
                                 <div className="flex items-start gap-3">
                                     <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
                                     <p className="text-sm text-muted-foreground leading-relaxed">

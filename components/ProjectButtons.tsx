@@ -1,8 +1,7 @@
 "use client";
 import { Button } from "./ui/button";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 
 type ProjectItem = {
     title: string;
@@ -21,8 +20,11 @@ const ProjectButtons = ({ project }: { project: ProjectItem }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Button className="p-6 flex items-center text-white">
-                        <ExternalLink className="w-4 h-4 " />
+                    <Button
+                        variant="outline"
+                        className="rounded-md flex items-center text-secondary-foreground"
+                    >
+                        <ExternalLink className="w-4 h-4" />
                         View Project
                     </Button>
                 </Link>
@@ -33,13 +35,8 @@ const ProjectButtons = ({ project }: { project: ProjectItem }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Button className="py-6 flex items-center bg-black text-white hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/80">
-                        <Image
-                            src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"
-                            alt="Github"
-                            width={25}
-                            height={25}
-                        />
+                    <Button className="rounded-md flex items-center light:bg-primary text-white hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/80">
+                        <Github className="w-4 h-4" />
                         View Code
                     </Button>
                 </Link>

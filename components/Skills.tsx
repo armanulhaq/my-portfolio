@@ -20,9 +20,9 @@ const Skills = () => {
                     {Object.entries(skills).map(([category, items]) => (
                         <div
                             key={category}
-                            className="bg-card border rounded-xl p-8 shadow-md backdrop-blur-sm transition-shadow hover:shadow-lg hover:border-primary/50"
+                            className="bg-card border rounded-xl p-8 shadow-md transition-shadow hover:shadow-lg hover:border-primary/50"
                         >
-                            <h3 className="text-xl font-bold text-foreground mb-6 pb-3 border-b border-border">
+                            <h3 className="text-xl font-bold text-foreground mb-6 pb-3 border-b">
                                 {category}
                             </h3>
                             <div className="flex flex-wrap gap-3">
@@ -30,7 +30,7 @@ const Skills = () => {
                                     <Badge
                                         variant="outline"
                                         key={skill.name}
-                                        className="px-4 py-2 text-sm font-medium bg-muted/50 hover:bg-primary/20 hover:text-primary border border-border hover:border-primary/50 transition-colors flex items-center gap-2"
+                                        className="px-4 py-2 text-sm font-medium bg-muted/50 hover:bg-primary/20 hover:text-primary border border-border hover:border-primary/50 transition-colors flex items-center"
                                     >
                                         <Image
                                             src={skill.icon}
