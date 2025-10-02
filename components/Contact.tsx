@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Copy, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import EmailCopyButton from "./EmailCopyButton";
 
